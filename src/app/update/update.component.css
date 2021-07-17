@@ -1,0 +1,21 @@
+.todoo-container{
+
+    width:350px; position: absolute;
+    left:75%;
+    top:48%;
+    transform: translate(-40%,-40%);
+   
+   
+   
+   
+   }
+   .addtodo{
+    color:grey;
+    background-color:#074855 ;
+    position: relative;
+    left:200px;
+    border:1px solid rgb(122, 112, 112);
+    border-radius: 5px;
+    width: 70px;
+}
+   

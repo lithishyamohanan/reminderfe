@@ -1,0 +1,38 @@
+<!-- 
+
+<div class="container">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+          <div class="one"> 
+          <div class="hello">
+            <form [formGroup]="registerForm" (ngSubmit)="register()">
+                <h4 id="head">EventsApp</h4>
+            <input type="text" class="form-control form-control-lg " id="userid" formControlName="uid"   name="uid" placeholder="enter user id"><br>
+            <input type="text" class="form-control form-control-lg " id="username" formControlName="uname"   name="uname" placeholder="enter user name"><br>
+            <input type="password" class="form-control form-control-lg" id="pwd" formControlName="pswd" name="password" placeholder="enter password"><br>
+            <button type="submit" id="new" class="btn btn-success">Register</button><br>
+    
+            <div class="moon"></div><br>
+            <a routerLink="" href="#">Login</a>
+            </form>
+         </div>
+         </div>
+        </div>
+        <div class="col-4"></div>
+    </div>
+  </div>
+   -->
+   <div class="todo-container">
+    <form class="input-section" [formGroup]="registerForm" (ngSubmit)="register()" >
+      <h1>Todo App</h1>
+    
+         <input type="text" name="uid" placeholder="Userid" formControlName="uid"><br><br>
+         <input type="text" name="uname" placeholder="Username" formControlName="uname" ><br><br>
+         <input type="password" name="pswd" placeholder="Password" formControlName="pswd"><br><br>
+        <button class="addto" type="submit">Register</button><br><br>
+       
+        
+    </form>
+
+

@@ -1,0 +1,40 @@
+<!-- <form [formGroup]="viewForm" (ngSubmit)="view()" >
+    <div class="container">
+        <h1>Event History</h1>
+        <input type="text" name="userid" placeholder="userid please" formControlName="uid" >
+        <button type="submit">view</button>
+        <table>
+            <thead>
+         <tr>
+            <th>Date</th>
+            <th>Event</th>
+        </tr>
+    </thead>
+    <tbody>
+         <tr *ngFor="let result of eventdet;let i=index;">
+            <td>{{result.date}}</td>
+            <td>{{result.evnt}}</td>
+        </tr>
+      
+    </tbody>
+        </table>
+       
+    </div>
+</form> -->
+<div class="todo-container">
+    <form class="input-section" [formGroup]="viewForm" (ngSubmit)="view()" >
+      <h1>EventHistory</h1>
+    
+      <input type="text" name="userid" placeholder="userid please" formControlName="uid" ><br><br>
+         <button class="addto" type="submit">View</button>
+         <button class="addtos" (click)="back()">back</button>
+         <button class="addtoss" (click)="update()">update</button>
+
+    </form><br>
+   <ul *ngFor="let result of eventdet; let index = index;">
+     <li> Hey {{user}} !! There is  {{result.evnt}} on {{result.date}}<i class="fas fa-trash-alt" (click)="deleteevnt(index)"></i></li>
+    
+   </ul> 
+   
+  
+  </div>

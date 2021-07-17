@@ -1,0 +1,40 @@
+/* .hlo{
+    position: relative;
+    margin-top:25px;
+    margin-left: 27px;
+    border: 20px;
+    background-color:turquoise;
+    width:350px;
+    height:400px;
+}
+.on{
+    width:400px;
+    height:500px;
+    background-color: turquoise;
+    border-radius: 15px;
+} */
+
+.addto{
+    color:grey;
+    background-color:#074855 ;
+    position: absolute;
+    left:20px;
+   border:1px solid rgb(122, 112, 112);
+    border-radius: 5px;
+    width:310px;
+    height:35px;
+}
+.moon{
+    border-bottom: 1px solid rgb(83, 79, 79);
+    display: flex;
+    position: relative;
+    
+    
+} 
+#ok{
+    text-decoration: none;
+    color:grey;
+    font-size: small;
+   position:absolute;
+   left:10%;
+}

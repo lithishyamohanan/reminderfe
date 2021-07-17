@@ -1,0 +1,160 @@
+/* You can add global styles to this file, and also import other style files */
+/* .hello{
+    position: relative;
+    margin-top:25px;
+    margin-left: 27px;
+    border: 20px;
+    background-color:turquoise;
+    width:350px;
+    height:400px;
+}
+body{
+    background-color:brown;
+}
+#head{
+    text-align: center;
+}
+.one{
+    width:400px;
+    height:400px;
+    background-color: turquoise;
+    border-radius: 15px;
+}
+#new{
+    width:350px;
+}
+#ok{
+    text-decoration: none;
+    position:relative;
+    left:100px;
+    top:15px;
+}
+.moon{
+    border-bottom: 1px solid black;
+    display: flex;
+    position: relative;
+    top: 23px;
+    
+}    
+#six{
+    position: relative;
+    margin-top: 38px ;
+     margin-left:0px;
+     width:350px;
+     height:40px;
+     border-radius: 10px;
+     background-color: tomato;
+     color:white
+}
+#two{
+    text-align: center;
+} */
+
+
+body{
+    margin:0;
+    background-color:#056679;
+  font-family: sans-serif;
+}
+.todo-container{
+
+ width:350px; position: absolute;
+ left:45%;
+ top:30%;
+ transform: translate(-40%,-40%);
+ text-align: center;
+
+
+
+}
+h1{
+    margin: 0;
+    margin-bottom:15px;
+    color: #ababab;
+    background-color: #074855;
+}
+.input-section{
+    background-color: #074855;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px #2e2d2d66;
+    
+    
+}
+.input-section input{
+    border-radius: 5px;
+    border:1px solid rgb(122, 112, 112);
+    width:100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #074855;
+    outline: none;
+    color:silver
+}
+ul{
+   
+    text-align: left;
+    padding: 0;
+}
+ul li{
+    display:flex;
+    list-style: none;
+    background-color: #074855;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color:grey;
+    box-shadow: 0 4px 6px #00000066
+}
+input::placeholder{
+    color:silver;
+}
+ul li i{
+    text-align: right;
+    flex:1;
+}
+.addto{
+    color:grey;
+    background-color:#074855 ;
+    position: relative;
+    left:100px;
+    border:1px solid rgb(122, 112, 112);
+    border-radius: 5px;
+    width: 70px;
+}
+.addtos{
+    color:grey;
+    background-color:#074855 ;
+    position: absolute;
+    left:135px;
+    border:1px solid rgb(122, 112, 112);
+    border-radius: 5px;
+    width: 70px;
+}
+.addtoss{
+    color:grey;
+    background-color:#074855 ;
+    position: absolute;
+    left:30px;
+    border:1px solid rgb(122, 112, 112);
+    border-radius: 5px;
+    width: 70px;
+}
+/* .addtosss{
+    color:grey;
+    background-color:#074855 ;
+    position: relative;
+    left:70px;
+    border:1px solid rgb(122, 112, 112);
+    border-radius: 5px;
+    width: 70px;
+} */
+ul li button{
+    text-align: right;
+    background-color:#074855 ;
+    color:grey;
+    border:1px solid rgb(122, 112, 112);
+    border-radius: 5px;
+    position: relative;
+    left:70px;
+}

@@ -1,0 +1,57 @@
+
+ <div class="todo-container">
+  <form class="input-section"   [formGroup]="updateForm" (ngSubmit)="view()" >
+    <h1>EventHistory</h1>
+  
+    <input type="text" name="userid" placeholder="userid please" formControlName="uid" ><br><br>
+       <button class="addto" type="submit">View</button>
+       <button class="addtos" (click)="back()">back</button>
+       <!-- <button class="addtoss" (click)="update()">update</button> -->
+
+  </form><br>
+ <ul *ngFor="let result of eventdet; let index = index;">
+   <li >{{result.evnt}} on {{result.date}}</li>
+  
+ </ul> 
+ 
+
+</div>
+<div *ngIf="uid">
+<div class="todoo-container">
+    <form class="input-section" [formGroup]="updateevntForm" (ngSubmit)="updateevnt()">
+      <h1>EventUpdate</h1>
+    
+      <input type="text" name="userid" placeholder="userid please" formControlName="uid" ><br><br>
+      <input type="text" name="datee" placeholder="date please" formControlName="dates" ><br><br>
+      <input type="text" name="evntt" placeholder="event please" formControlName="evnts" ><br><br>
+      <input type="text" name="newdate" placeholder="new date please" formControlName="ndate" ><br><br>
+      <input type="text" name="newevntt" placeholder=" new event please" formControlName="nevnt" ><br><br>
+
+      <button class="addtodo" type="submit">update</button>
+      
+
+    </form><br>
+   
+   
+  
+  </div>
+</div>
+<!-- <div class="todo-container">
+    <form class="input-section" [formGroup]="updateForm" (ngSubmit)="updateevnt()">
+      <h1>EventUpdate</h1>
+    
+      <input type="text" name="userid" placeholder="userid please" formControlName="uid" ><br><br>
+      <input type="text" name="datee" placeholder="date please" formControlName="dates" ><br><br>
+      <input type="text" name="evntt" placeholder="event please" formControlName="evnts" ><br><br>
+      <input type="text" name="newdate" placeholder="new date please" formControlName="ndate" ><br><br>
+      <input type="text" name="newevntt" placeholder=" new event please" formControlName="nevnt" ><br><br>
+
+      <button class="addto" type="submit">update</button>
+         <button class="addtos" (click)="back()" >back</button>
+      
+
+    </form><br>
+   
+   
+  
+  </div> -->

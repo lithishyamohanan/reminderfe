@@ -1,0 +1,46 @@
+<!-- 
+
+<div class="container">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+          <h1>welcome {{user}}</h1>
+          <div class="on"> 
+          <div class="hlo">
+            
+            <form [formGroup]="dashboardForm" (ngSubmit)="save()" >
+                <h4 id="head">EventsApp<br>
+                  <h5>eventform</h5></h4>
+           <input type="text" class="form-control form-control-lg " id="userid"  formControlName="uid" name="uid" placeholder="enter user id"><br>
+           <input type="password" class="form-control form-control-lg" id="pwd" formControlName="pswd"  name="password" placeholder="enter password"><br>
+            <input type="date" class="form-control form-control-lg " id="date" formControlName="date"   name="Edate" placeholder="enter date"><br>
+            <input type="text" class="form-control form-control-lg " id="evnt" formControlName="evnt"  name="eventt" placeholder="enter event"><br>
+           <button type="submit" id="new" class="btn btn-success"  >AddEvents</button><br>
+           <div class="moon"></div>
+           <button id="six" (click)="view()"><h6><b>View History</b></h6></button><br>
+
+            
+            </form>
+         </div>
+         </div>
+        </div>
+        <div class="col-4"></div>
+    </div>
+  </div>
+   -->
+   <div class="todo-container"><br>
+    <h1>welcome {{user}}</h1>
+    <form class="input-section"[formGroup]="dashboardForm" (ngSubmit)="save()" >
+      <h1>EventsApp</h1>
+    
+         <input type="text" name="uid" placeholder="Userid" formControlName="uid"><br><br>
+         <input type="password" name="pswd" placeholder="Password" formControlName="pswd"><br><br>
+         <input type="date"  id="date" class="form-control form-control-lg " formControlName="date"   name="Edate" placeholder="enter date"><br>
+         <input type="text"  id="evnt" class="form-control form-control-lg " formControlName="evnt"  name="eventt" placeholder="enter event"><br>
+         <div class="moon"></div>
+         <button class="addto" type="submit">AddEvents</button><br><br>
+        <button class="addto" (click)="view()">ViewHistory</button><br><br>
+        
+    </form>
+
+
